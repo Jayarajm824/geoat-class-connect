@@ -22,6 +22,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+          light: "hsl(var(--primary-light))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -57,6 +59,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // GeoAt specific colors
+        classroom: {
+          bg: "hsl(var(--classroom-bg))",
+          tile: "hsl(var(--student-tile))",
+        },
+        teacher: {
+          accent: "hsl(var(--teacher-accent))",
+        },
+        attendance: {
+          success: "hsl(var(--attendance-success))",
+          pending: "hsl(var(--attendance-pending))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +98,24 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // GeoAt animations
+        "fade-in": "fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        "slide-up": "slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+        "scale-in": "scaleIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "tile-enter": "tileEnter 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "attendance-pulse": "attendancePulse 2s ease-in-out infinite",
+      },
+      backgroundImage: {
+        // GeoAt gradients
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-classroom": "var(--gradient-classroom)",
+      },
+      boxShadow: {
+        // GeoAt shadows
+        "card": "var(--shadow-card)",
+        "elevated": "var(--shadow-elevated)",
+        "classroom": "var(--shadow-classroom)",
       },
     },
   },
